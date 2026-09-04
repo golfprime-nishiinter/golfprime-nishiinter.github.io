@@ -617,6 +617,21 @@
     });
 
     /* 2) 離れようとした時のモーダル */
+    /* 2a-0) 閉じるボタン・タブを閉じる操作: ブラウザ標準の確認を出し、
+       「とどまる」を選んだ人にモーダルを表示（自サイトのボタン経由の移動では出さない） */
+    var leavingViaLink = false;
+    document.addEventListener('click', function(e){
+      if(e.target.closest && e.target.closest('a')){
+        leavingViaLink = true;
+        setTimeout(function(){ leavingViaLink = false; }, 3000);
+      }
+    }, true);
+    window.addEventListener('beforeunload', function(e){
+      if(leavingViaLink || shownExit) return;
+      e.preventDefault();
+      e.returnValue = '';
+      setTimeout(function(){ openExit(); }, 600); /* とどまった場合のみ実行される */
+    });
     /* 2a) PC: マウスが画面上部から出た時 */
     document.addEventListener('mouseout', function(e){
       if(e.relatedTarget || e.clientY > 10) return;
