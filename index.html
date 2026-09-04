@@ -597,41 +597,53 @@
       el.hidden = false;
     }
 
-    /* --- スクロールが止まった時のナッジ --- */
+    /* --- ポップアップ2種（それぞれ1回ずつ必ず出す・互いに独立） --- */
     var nudge = document.getElementById('nudge');
-    var nudgeDone = false, idleTimer = null;
-    window.addEventListener('scroll', function(){
-      if(nudgeDone || exitDone) return;
-      clearTimeout(idleTimer);
-      if(window.scrollY > 600){
-        idleTimer = setTimeout(function(){
-          if(nudgeDone || exitDone) return;
-          nudgeDone = true;
-          nudge.classList.add('show');
-        }, 1600);
-      }
-    }, {passive:true});
-    document.getElementById('nudge-close').addEventListener('click', function(){
-      nudge.classList.remove('show');
-    });
-
-    /* --- 画面から離れようとした時のモーダル --- */
     var exitBg = document.getElementById('exit-bg');
-    var exitDone = false;
+    var shownNudge = false, shownExit = false;
+    var loadedAt = Date.now();
+
     function openExit(){
-      if(exitDone) return;
-      exitDone = true;
+      if(shownExit) return;
+      shownExit = true;
       nudge.classList.remove('show');
       exitBg.classList.add('show');
       var b = exitBg.querySelector('.btn');
       if(b) b.focus();
     }
     function closeExit(){ exitBg.classList.remove('show'); }
+
+    /* 1) スクロールが止まった時のナッジ（300px以上読んで1.4秒停止） */
+    var idleTimer = null;
+    window.addEventListener('scroll', function(){
+      if(shownNudge) return;
+      clearTimeout(idleTimer);
+      if(window.scrollY > 300){
+        idleTimer = setTimeout(function(){
+          if(shownNudge || exitBg.classList.contains('show')) return;
+          shownNudge = true;
+          nudge.classList.add('show');
+        }, 1400);
+      }
+    }, {passive:true});
+    document.getElementById('nudge-close').addEventListener('click', function(){
+      nudge.classList.remove('show');
+    });
+
+    /* 2) 離れようとした時のモーダル */
+    /* 2a) PC: マウスが画面上部から出た時 */
     document.addEventListener('mouseout', function(e){
       if(e.relatedTarget || e.clientY > 10) return;
       openExit();
     });
-    /* スマホ: 下まで読んだ後に勢いよく上へ戻るスワイプ = 離脱のサイン */
+    /* 2b) スマホ: 戻るボタン・戻るスワイプを1回だけ受け止める */
+    try{
+      history.pushState({gp:1}, '');
+      window.addEventListener('popstate', function(){
+        if(!shownExit) openExit();
+      });
+    }catch(e){}
+    /* 2c) スマホ: 深く読んだ後に一番上まで戻った時/勢いよく上に戻った時 */
     var deepest = 0, hist = [];
     window.addEventListener('scroll', function(){
       var y = window.scrollY, t = Date.now();
@@ -639,10 +651,12 @@
       hist.push([t, y]);
       while(hist.length && t - hist[0][0] > 350) hist.shift();
       var drop = hist[0][1] - y;
-      if(drop > 400 && deepest > 900 && y < deepest - 400){
+      if(t - loadedAt > 5000 && deepest > 1000 &&
+         ((y < 120) || (drop > 400 && y < deepest - 400))){
         openExit();
       }
     }, {passive:true});
+
     document.getElementById('exit-close').addEventListener('click', closeExit);
     document.getElementById('exit-later').addEventListener('click', closeExit);
     exitBg.addEventListener('click', function(e){ if(e.target === exitBg) closeExit(); });
