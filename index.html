@@ -597,6 +597,27 @@
       el.hidden = false;
     }
 
+    /* --- GA4計測: CTAクリック(フォーム/LINE)とポップアップの表示・閉じる --- */
+    function track(name, params){
+      try{ if(typeof gtag === 'function') gtag('event', name, params || {}); }catch(e){}
+    }
+    function ctaPlace(a){
+      if(a.closest('#exit-bg')) return 'exit_modal';
+      if(a.closest('#nudge')) return 'nudge';
+      if(a.closest('.fixbar')) return 'fixbar';
+      if(a.classList.contains('head-cta')) return 'header';
+      var sec = a.closest('section, header, footer, .hero');
+      return (sec && (sec.id || sec.className.split(' ')[0])) || 'other';
+    }
+    document.addEventListener('click', function(e){
+      var a = e.target.closest && e.target.closest('a[href]');
+      if(!a) return;
+      var h = a.getAttribute('href') || '';
+      var name = h.indexOf('golfprime.jp/form') >= 0 ? 'cta_form'
+               : h.indexOf('line.me') >= 0 ? 'cta_line' : null;
+      if(name) track(name, {cta_place: ctaPlace(a), transport_type: 'beacon'});
+    }, true);
+
     /* --- ポップアップ2種（それぞれ1回ずつ必ず出す・互いに独立） --- */
     var nudge = document.getElementById('nudge');
     var exitBg = document.getElementById('exit-bg');
@@ -608,10 +629,14 @@
       shownExit = true;
       nudge.classList.remove('show');
       exitBg.classList.add('show');
+      track('popup_view', {popup_type: 'exit_modal'});
       var b = exitBg.querySelector('.btn');
       if(b) b.focus();
     }
-    function closeExit(){ exitBg.classList.remove('show'); }
+    function closeExit(){
+      if(exitBg.classList.contains('show')) track('popup_close', {popup_type: 'exit_modal'});
+      exitBg.classList.remove('show');
+    }
 
     /* 1) スクロールが止まった時のナッジ（300px以上読んで1.4秒停止） */
     var idleTimer = null;
@@ -623,11 +648,13 @@
           if(shownNudge || exitBg.classList.contains('show')) return;
           shownNudge = true;
           nudge.classList.add('show');
+          track('popup_view', {popup_type: 'nudge'});
         }, 1400);
       }
     }, {passive:true});
     document.getElementById('nudge-close').addEventListener('click', function(){
       nudge.classList.remove('show');
+      track('popup_close', {popup_type: 'nudge'});
     });
 
     /* 2) 離れようとした時のモーダル */
