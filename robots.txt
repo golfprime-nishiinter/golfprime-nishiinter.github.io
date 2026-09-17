@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://golfprime-nishiinter.github.io/guide/sitemap.xml
