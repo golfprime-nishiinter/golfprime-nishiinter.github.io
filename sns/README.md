@@ -29,3 +29,11 @@
 ## 注意
 - Chromeの拡張機能経由でのファイルアップロードは、環境によってブロックされることがある。その場合はカードを生成したうえで、康太さんにアップロードだけ頼む
 - Chromeのウィンドウが最小化されていると操作できない（画面サイズ0になる）
+- 画像アップロードのコツ(2026-09-17に成功した方法): 「写真・動画を追加」ボタンをクリックすると
+  Windowsのファイル選択ダイアログが開いてChromeが固まる。クリックせず、javascript_tool で
+  `HTMLInputElement.prototype.click` を一時的に差し替えて file input を捕まえ、`document.body` に
+  appendChild してから mcp__claude-in-chrome__file_upload でアップロードする。
+  固まったら、そのタブを閉じて新しいタブで開き直す
+- 「FacebookとInstagram用の投稿をカスタマイズ」をオンにすると Facebook / Instagram のタブが出る。
+  各タブのテキスト欄にそれぞれ facebook.txt / instagram.txt を入れる
+- 公開後は「他に公開したい投稿はありますか？」ダイアログが出る=公開成功。「後で」で閉じる
