@@ -141,7 +141,7 @@ def render(p):
         def re_cards(m):
             sec = m.group(2)
             return '<h3>%s</h3>\n%s' % (m.group(1), cards(sec))
-        body = re.sub(r'<h3>([^<]*)</h3>\s*<p><div class="cards"><a class="card" href="(/[^/]+/)".*?</div></p>', re_cards, body, flags=re.S)
+        body = re.sub(r'<h3>([^<]*)</h3>\s*<p><div class="cards"><a class="card" href="(/[^/]+/)[^"]*".*?</div></p>', re_cards, body, flags=re.S)
         body = body.replace('<!-- CTA -->', CTA)
     elif p == section_of(p) and children(p):
         body = body.rstrip() + '\n' + cards(p)
