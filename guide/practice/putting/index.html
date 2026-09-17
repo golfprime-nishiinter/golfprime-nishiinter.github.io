@@ -149,10 +149,10 @@ strong{color:var(--teal-deep)}
   <button class="nav-toggle" aria-label="メニュー" aria-expanded="false" data-nav-toggle>☰</button>
   <nav class="site-nav" data-nav><a href="/guide/">ホーム</a><a href="/guide/price/">料金</a><a href="/guide/facility/">設備</a><a href="/guide/lesson/">レッスン</a><a href="/guide/beginner/">初心者ガイド</a><a href="/guide/practice/">練習法</a><a href="/guide/simulator/">数値の見方</a><a href="/guide/gear/">道具</a><a href="/guide/access/">アクセス</a><a href="/guide/faq/">FAQ</a><a class="nav-cta" href="https://golfprime.jp/form/nishiinter/" rel="noopener">無料体験</a></nav>
 </header>
-<main class="wrap" data-page="/practice/putting/">
+<main class="wrap">
   <nav class="crumb" aria-label="パンくず"><a href="/guide/">ホーム</a> › <a href="/guide/practice/">上達する練習法</a> › <span>パターの練習法｜3パットをなくすと100切りが見える</span></nav>
   <article>
-    <h1>パターの練習法｜3パットをなくすと100切りが見える</h1>
+<h1>パターの練習法｜3パットをなくすと100切りが見える</h1>
     
     
     <aside class="tldr" aria-label="結論"><p class="tldr-h">結論を3行で</p><ol><li>1ラウンド36パット以下が100切りの条件。3パットを1ラウンド2回以下にする</li><li>ロングパットは「入れる」ではなく「1m以内に寄せる」。距離感は振り幅で作る</li><li>1m以内を確実に入れる練習を、毎回の練習の最後に10球入れる</li></ol></aside>
@@ -195,7 +195,7 @@ strong{color:var(--teal-deep)}
   </article>
   <section class="cta-box">
   <h2>まずは無料体験から</h2>
-  <p class="cta-camp"><span data-mdw="{M}月{D}日({W})">9月30日(水)</span>まで、初期費用＆初月利用料 0円</p>
+  <p class="cta-camp"><span data-mdw="{M}月{D}日({W})">月末</span>まで、初期費用＆初月利用料 0円</p>
   <p>月額7,700円(税込)で24時間365日・回数制限なし。貸クラブがあるので手ぶらでOK、しつこい勧誘はありません。</p>
   <div class="cta-btns">
     <a class="btn btn-main" href="https://golfprime.jp/form/nishiinter/" rel="noopener">無料体験を予約する<small>フォームで1分・24時間受付</small></a>
@@ -220,7 +220,7 @@ strong{color:var(--teal-deep)}
 <div class="exit-modal" id="exitModal" role="dialog" aria-modal="true" aria-hidden="true">
   <div class="m-inner">
     <button class="m-close" aria-label="閉じる" data-close>✕</button>
-    <p class="m-until"><span data-mdw="{M}月{D}日({W})">9月30日(水)</span>まで</p><p class="m-big">初期費用＆初月利用料 0円は<br>今月で終了です</p>
+    <p class="m-until"><span data-mdw="{M}月{D}日({W})">月末</span>まで</p><p class="m-big">初期費用＆初月利用料 0円は<br>今月で終了です</p>
     <p class="m-h">ちょっと待ってください！</p>
     <p>月額7,700円(税込)だけで24時間打ち放題。まずは無料体験で試してみませんか？</p>
     <a class="btn btn-main" href="https://golfprime.jp/form/nishiinter/" rel="noopener">無料体験を予約する</a>
@@ -233,7 +233,6 @@ strong{color:var(--teal-deep)}
   var now0=new Date(), mLast=new Date(now0.getFullYear(), now0.getMonth()+1, 0);
   var M=now0.getMonth()+1, D=mLast.getDate(), W='日月火水木金土'[mLast.getDay()];
   document.querySelectorAll('[data-mdw]').forEach(function(e){e.textContent=e.getAttribute('data-mdw').replace('{M}',M).replace('{D}',D).replace('{W}',W);});
-  // GA4: CTAクリック計測(LPと同じイベント名)
   function track(n,p){try{if(typeof gtag==='function')gtag('event',n,p||{});}catch(e){}}
   document.querySelectorAll('a[href*="golfprime.jp/form"]').forEach(function(a){a.addEventListener('click',function(){track('cta_form',{place:a.className||'link',page:location.pathname});});});
   document.querySelectorAll('a[href*="line.me"]').forEach(function(a){a.addEventListener('click',function(){track('cta_line',{place:a.className||'link',page:location.pathname});});});
@@ -270,5 +269,6 @@ strong{color:var(--teal-deep)}
   },{passive:true});
 })();
 </script>
+
 </body>
 </html>
