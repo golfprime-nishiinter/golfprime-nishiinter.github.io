@@ -31,6 +31,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-09-28": {
+        "views": 86,
+        "viewers": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -66,6 +75,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-09-28": {
+        "views": 132,
+        "viewers": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -93,6 +111,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-09-28": {
+        "views": 84,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -108,7 +135,19 @@
     "caption": "ゴルフを始めたいけど、クラブを買う前に試したい。そんな方へ。\n\n・貸クラブがあるので手ぶらで来られます\n・完全予約制。来てから待つことはありません\n・仕切りのある半個室。初心者でも隣が気になりません\n・数週間打ってヘッドスピードを測ってからクラブを買うと、失敗しにくいです\n\n金沢西インターすぐ、駐車場あり。\n\n無料体験はプロフィールのリンク、または公式LINEから。",
     "article": "/beginner/start/",
     "hashtags": "#ゴルフ初心者 #ゴルフ始めたい #金沢ゴルフ #インドアゴルフ #手ぶらゴルフ #金沢西インター #野々市 #ゴルフプライム",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-09-28",
+    "insights": {
+      "2026-09-28": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-09-29-meet",
