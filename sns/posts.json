@@ -33,7 +33,7 @@
         "link_clicks": 0
       },
       "2026-09-28": {
-        "views": 86,
+        "views": 89,
         "viewers": 2,
         "likes": 1,
         "comments": 0,
@@ -77,7 +77,7 @@
         "link_clicks": 0
       },
       "2026-09-28": {
-        "views": 132,
+        "views": 138,
         "viewers": 2,
         "likes": 1,
         "comments": 0,
@@ -113,7 +113,7 @@
         "link_clicks": 0
       },
       "2026-09-28": {
-        "views": 84,
+        "views": 92,
         "viewers": 0,
         "likes": 0,
         "comments": 0,
@@ -139,9 +139,9 @@
     "posted_at": "2026-09-28",
     "insights": {
       "2026-09-28": {
-        "views": 0,
+        "views": 74,
         "viewers": 0,
-        "likes": 0,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
         "saves": 0,
@@ -161,7 +161,19 @@
     "caption": "シミュレーターの数値、どれを見ればいいか迷ったら「ミート率」だけ見てください。\n\nミート率＝ボール初速÷ヘッドスピード。芯に当たっているかの指標です。\n\n・ドライバーは1.40以上が目安（上限は1.50前後）\n・1.30台なら、飛距離アップの練習より先に芯に当てる練習\n・1球ごとではなく、10球の平均で判断する\n\nヘッドスピードを上げなくても、ミート率が0.1上がれば飛距離は10ヤード以上変わります。\n\n数値の見方はプロフィールのリンクから。",
     "article": "/simulator/meet-rate/",
     "hashtags": "#ミート率 #ゴルフシミュレーター #飛距離アップ #金沢ゴルフ #インドアゴルフ #ゴルフ練習 #金沢西インター #ゴルフプライム",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-09-28",
+    "insights": {
+      "2026-09-28": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-10-01-lesson",
