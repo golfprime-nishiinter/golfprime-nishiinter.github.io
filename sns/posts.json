@@ -138,6 +138,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 146,
+        "viewers": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -201,6 +210,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 109,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -248,6 +266,15 @@
       },
       "2026-10-02": {
         "views": 102,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 106,
         "viewers": 1,
         "likes": 1,
         "comments": 0,
@@ -307,6 +334,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 156,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -352,6 +388,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 93,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -389,6 +434,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 98,
+        "viewers": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -416,6 +470,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-04": {
+        "views": 82,
+        "viewers": 1,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -432,7 +495,19 @@
     "article": "/practice/approach/",
     "hashtags": "#金沢ゴルフ #インドアゴルフ #金沢西インター #ゴルフプライム #アプローチ #100切り #ゴルフ練習 #ショートゲーム #ゴルフシミュレーター",
     "reason": "練習法。100切り層に刺さるスコア直結ネタ",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-10-04",
+    "insights": {
+      "2026-10-04": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-10-03-head-speed",
