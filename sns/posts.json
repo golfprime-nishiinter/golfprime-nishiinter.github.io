@@ -67,6 +67,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 98,
+        "viewers": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -147,6 +156,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 147,
+        "viewers": 2,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -219,6 +237,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 110,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -275,6 +302,15 @@
       },
       "2026-10-04": {
         "views": 106,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 107,
         "viewers": 1,
         "likes": 1,
         "comments": 0,
@@ -343,6 +379,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 158,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -397,6 +442,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 95,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -443,6 +497,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 100,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -479,6 +542,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 87,
+        "viewers": 1,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -506,6 +578,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-05": {
+        "views": 70,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -522,7 +603,20 @@
     "article": "/simulator/head-speed/",
     "hashtags": "#金沢ゴルフ #インドアゴルフ #金沢西インター #ゴルフプライム #ヘッドスピード #ミート率 #飛距離アップ #ゴルフシミュレーター #ドライバー",
     "reason": "数値の見方。ミート率投稿の続編として飛距離の仕組みを説明",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-10-05",
+    "note": "Facebook本文はリンク月2件の無料枠（10/2・10/4で使用済み）のためURLなし（LINE IDのみ）で投稿",
+    "insights": {
+      "2026-10-05": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-10-04-restart",
