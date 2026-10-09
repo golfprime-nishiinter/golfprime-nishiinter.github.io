@@ -246,6 +246,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 120,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -311,6 +320,15 @@
       },
       "2026-10-05": {
         "views": 107,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 119,
         "viewers": 1,
         "likes": 1,
         "comments": 0,
@@ -388,6 +406,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 174,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -451,6 +478,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 109,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -506,6 +542,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 112,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -551,6 +596,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 103,
+        "viewers": 1,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -587,6 +641,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 95,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -615,6 +678,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-09": {
+        "views": 142,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -631,7 +703,19 @@
     "article": "/beginner/restart/",
     "hashtags": "#金沢ゴルフ #インドアゴルフ #金沢西インター #ゴルフプライム #ゴルフ再開 #ブランク #ハーフスイング #ミート率 #大人の趣味",
     "reason": "試していないテーマ（再開組）。初心者向けとは別の層に届く可能性",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-10-09",
+    "insights": {
+      "2026-10-09": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-10-05-half-swing",
