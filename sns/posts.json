@@ -550,6 +550,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 109,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -632,6 +641,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 112,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -704,6 +722,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 106,
+        "viewers": 1,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -767,6 +794,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 98,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -822,6 +858,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 146,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -867,6 +912,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 77,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -904,6 +958,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 64,
+        "viewers": 2,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -931,6 +994,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-12": {
+        "views": 40,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -947,7 +1019,20 @@
     "article": "/beginner/course-debut/",
     "hashtags": "#金沢ゴルフ #インドアゴルフ #金沢西インター #ゴルフプライム #コースデビュー #初ラウンド #ゴルフ初心者 #秋ゴルフ #ラウンドモード",
     "reason": "季節ネタ（秋のラウンドシーズン）。コースデビューを迷う初心者に、ラウンドモードの使いどころを伝える",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-10-12",
+    "note": "Facebook側はリンク無料枠超過のためURLなし本文で公開（2026-10-12）",
+    "insights": {
+      "2026-10-12": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-10-08-women",
