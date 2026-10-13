@@ -559,6 +559,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 111,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -650,6 +659,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 113,
+        "viewers": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -731,6 +749,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 106,
+        "viewers": 1,
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -803,6 +830,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 99,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -867,6 +903,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 148,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -921,6 +966,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 79,
+        "viewers": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -967,6 +1021,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 67,
+        "viewers": 2,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -1003,6 +1066,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 45,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -1031,6 +1103,15 @@
         "shares": 0,
         "saves": 0,
         "link_clicks": 0
+      },
+      "2026-10-13": {
+        "views": 39,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
       }
     }
   },
@@ -1047,7 +1128,8 @@
     "article": "/beginner/women/",
     "hashtags": "#金沢ゴルフ #インドアゴルフ #金沢西インター #ゴルフプライム #女性ゴルファー #ゴルフ女子 #ゴルフ初心者 #手ぶらゴルフ #半個室",
     "reason": "試していないテーマ（女性向け）。半個室・予約制・女性プロという施設の強みがそのまま答えになる",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-10-13"
   },
   {
     "id": "2026-10-09-putting",
