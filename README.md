@@ -4,8 +4,10 @@
 
 - 公開URL: https://golfprime-nishiinter.github.io/
 - `src/lp_template.html` … LP本体のテンプレート（画像はプレースホルダ）
-- `src/assets/` … 圧縮済み画像。月替わりバナーは `out_hero.jpg` を差し替える
-- `node src/build.cjs` … `index.html` を生成（画像埋め込み・GA4タグ付き）
+- `src/assets/` … 圧縮済み画像。`out_hero.jpg`（月替わりバナー）は手で差し替えず `src/set_banner.py` で更新する
+- **月替わりバナー**: `python src/set_banner.py <受け取ったバナー.jpg> --month YYYY-MM` → ヒーロー画像・OG画像（`banners/YYYY-MM.jpg`）・`src/banner.json` が一度に更新される。build は banner.json の月が今月と違うと止まる。広告マネージャの画像差し替えと確認手順は `ads/README.md`
+- `banners/` … 月替わりバナーの原本（LINEで受領）と公開用コピー。LPの og:image（リンクプレビュー画像）と広告マネージャにアップロードする画像はここのファイルを使う
+- `node src/build.cjs` … `index.html` を生成（画像埋め込み・GA4タグ・og:image付き）
 - 〆切日・カウントダウンは「その月の月末」を自動計算するのでメンテ不要
 - 編集したら build → commit → push で数分後に公開反映
 
