@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "seo-preview",
+      "runtimeExecutable": "C:\Users\aenos\AppData\Local\Programs\Python\Python312\python.exe",
+      "runtimeArgs": ["-m", "http.server", "8765", "--directory", "C:\Users\aenos\Downloads\karte\golfprime-lp"],
+      "port": 8765
+    }
+  ]
+}
