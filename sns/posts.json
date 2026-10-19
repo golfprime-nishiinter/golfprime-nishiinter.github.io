@@ -1131,7 +1131,7 @@
         "link_clicks": 0
       },
       "2026-10-19": {
-        "views": 82,
+        "views": 84,
         "viewers": 2,
         "likes": 0,
         "comments": 0,
@@ -1185,7 +1185,7 @@
         "link_clicks": 0
       },
       "2026-10-19": {
-        "views": 60,
+        "views": 62,
         "viewers": 0,
         "likes": 0,
         "comments": 0,
@@ -1231,7 +1231,7 @@
         "link_clicks": 0
       },
       "2026-10-19": {
-        "views": 53,
+        "views": 55,
         "viewers": 0,
         "likes": 0,
         "comments": 0,
@@ -1285,7 +1285,7 @@
     "posted_at": "2026-10-19",
     "insights": {
       "2026-10-19": {
-        "views": 0,
+        "views": 47,
         "viewers": 0,
         "likes": 0,
         "comments": 0,
@@ -1308,7 +1308,19 @@
     "article": "/simulator/carry-total/",
     "hashtags": "#金沢ゴルフ #インドアゴルフ #金沢西インター #ゴルフプライム #キャリー #飛距離 #ゴルフシミュレーター #番手選び #距離表",
     "reason": "数値の見方テーマ。ラウンドシーズンに直結する「コースでショートする」悩みに答える",
-    "status": "draft"
+    "status": "posted",
+    "posted_at": "2026-10-19",
+    "insights": {
+      "2026-10-19": {
+        "views": 0,
+        "viewers": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "link_clicks": 0
+      }
+    }
   },
   {
     "id": "2026-10-11-indoor-vs-outdoor",
