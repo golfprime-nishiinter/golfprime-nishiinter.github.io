@@ -1,0 +1,52 @@
+# 毎月1日に、LPのバナーをその月の版へ自動で切り替える。
+# banners/src/01.jpg〜12.jpg（2026-11-26 に康太さんから受領した12か月分）から今月の1枚を選び、
+# src/set_banner.py → src/build.cjs → commit → push → GitHub Pages の再ビルド まで行う。
+# 毎日 0:05（日本時間）に動き、banner.json の月が今月と同じなら何もしない（1日に失敗しても翌日に追いつく）。
+name: monthly-banner
+on:
+  schedule:
+    - cron: '5 15 * * *'   # UTC 15:05 = 日本時間 0:05
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: monthly-banner
+  cancel-in-progress: false
+jobs:
+  switch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+      - name: Switch banner if the month changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          M=$(TZ=Asia/Tokyo date +%Y-%m)
+          MM=$(TZ=Asia/Tokyo date +%m)
+          CUR=$(python3 -c "import json;print(json.load(open('src/banner.json'))['month'])")
+          if [ "$CUR" = "$M" ]; then
+            echo "banner.json は既に $M。何もしない"
+            exit 0
+          fi
+          SRC="banners/src/$MM.jpg"
+          if [ ! -f "$SRC" ]; then
+            echo "::error::$SRC がありません。今月のバナーを banners/src/$MM.jpg に置いてください"
+            exit 1
+          fi
+          Y=$(TZ=Asia/Tokyo date +%Y)
+          if [ "$MM" = "02" ] && python3 -c "import calendar,sys;sys.exit(0 if calendar.isleap($Y) else 1)"; then
+            echo "::warning::$Y 年はうるう年。2月のバナーは「2月28日まで」表記なので、29日版に差し替えが必要"
+          fi
+          python3 src/set_banner.py "$SRC" --month "$M"
+          node src/build.cjs
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "lp: $M のバナーに自動切り替え（banners/src/$MM.jpg）"
+          git push
+          # GITHUB_TOKEN の push では Pages の再ビルドが走らないことがあるので明示的に依頼する
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" || echo "::warning::Pages の再ビルド依頼に失敗。次の push で反映される"
