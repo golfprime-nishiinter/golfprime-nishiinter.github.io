@@ -46,7 +46,7 @@
     color:var(--ink);background:var(--paper);
     line-height:1.85;font-size:16px;
     -webkit-font-smoothing:antialiased;
-    padding-bottom:76px; /* 固定CTAぶん */
+    padding-bottom:100px; /* 固定CTAぶん（要点1行ぶん高くした） */
   }
   @media(min-width:768px){body{padding-bottom:0}}
   img{max-width:100%;height:auto;display:block}
@@ -101,6 +101,11 @@
   .btn-line{background:var(--line);color:#fff}
   .btn small{display:block;font-size:11px;font-weight:700;opacity:.92}
   .hero-note{font-size:12px;opacity:.9;margin-top:10px}
+  /* 要点1行（PCはヒーローのボタン直下、スマホは固定ボタンの直上に出す） */
+  .hero-key{display:none;max-width:420px;margin-top:12px;text-align:center;font-size:12.5px;font-weight:800;
+    background:rgba(9,44,37,.35);border-radius:10px;padding:7px 10px;white-space:nowrap}
+  .hero-key b{color:#fff700}
+  @media(min-width:768px){.hero-key{display:block}}
   .hero-visual{margin:0 auto;max-width:400px;width:100%}
   .hero-visual img{border-radius:18px;box-shadow:0 14px 40px rgba(8,40,32,.35)}
 
@@ -249,7 +254,12 @@
   .fixbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;
     padding:10px 12px calc(10px + env(safe-area-inset-bottom));
     background:rgba(255,255,255,.97);border-top:1px solid var(--rule)}
+  .fixbar{flex-wrap:wrap;row-gap:6px}
   .fixbar .btn{flex:1;padding:12px 8px;font-size:14px;border-radius:12px;box-shadow:none}
+  .fix-key{flex:0 0 100%;text-align:center;font-weight:800;color:var(--ink);line-height:1.25;
+    font-size:clamp(9px,3vw,12.5px);white-space:nowrap}
+  .fix-key b{color:var(--price)}
+  .fix-key i{display:inline-block;width:1px;height:1em;background:var(--ink);opacity:.3;margin:0 .5em;vertical-align:-.12em}
   @media(min-width:768px){.fixbar{display:none}}
 
   /* スクロール停止時のナッジ */
@@ -258,7 +268,7 @@
     padding:18px 18px 16px;width:min(330px,calc(100vw - 28px));display:none}
   .nudge.show{display:block;animation:nudge-up .35s ease}
   @keyframes nudge-up{from{transform:translateY(18px);opacity:0}}
-  @media(max-width:767px){.nudge{left:14px;right:14px;width:auto;bottom:calc(84px + env(safe-area-inset-bottom))}}
+  @media(max-width:767px){.nudge{left:14px;right:14px;width:auto;bottom:calc(108px + env(safe-area-inset-bottom))}}
   .nudge h4{font-family:"M PLUS Rounded 1c",sans-serif;font-size:16px;font-weight:800;margin-bottom:4px;padding-right:26px}
   .nudge p{font-size:13px;color:#3c5249;margin-bottom:12px}
   .nudge p b{color:var(--price)}
@@ -313,6 +323,7 @@
         <a class="btn btn-cta" href="https://golfprime.jp/form/nishiinter/">無料体験を予約する<small>フォームで1分・24時間受付</small></a>
         <a class="btn btn-line" href="https://line.me/R/ti/p/@350tbhny">LINEで質問・相談する<small>公式LINEに登録して気軽に聞く</small></a>
       </div>
+      <p class="hero-key">月額<b>7,700円</b>(税込)／<span data-mdw="初期費用＆初月無料({M}/{D}まで)">初期費用＆初月無料(今月末まで)</span>／24時間打ち放題</p>
       <p class="hero-note">※体験のお申し込みは店頭では受け付けておりません。フォームまたはLINEからお願いします。</p>
     </div>
     <div class="hero-visual"><img src="src/assets/out_hero.jpg?v=2b375c9d" alt="9月30日まで 初期費用＆初月利用料完全無料キャンペーン" width="720" height="900"></div>
@@ -564,6 +575,7 @@
 
 <!-- 固定CTA(スマホ) -->
 <div class="fixbar">
+  <p class="fix-key">月額<b>7,700円</b><i></i><span data-mdw="初期費用＆初月無料({M}/{D}まで)">初期費用＆初月無料(今月末まで)</span><i></i>24時間打ち放題</p>
   <a class="btn btn-line" href="https://line.me/R/ti/p/@350tbhny">LINEで相談</a>
   <a class="btn btn-cta" href="https://golfprime.jp/form/nishiinter/">無料体験を予約</a>
 </div>
